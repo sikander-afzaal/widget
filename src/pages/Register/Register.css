@@ -143,7 +143,11 @@
   margin-top: 0.75rem;
 }
 
-.register__switchToLogin > span {
+.register__switchToLogin > a {
   color: var(--neon-blue);
   cursor: pointer;
+  text-decoration: none;
+}
+.register__switchToLogin > a:hover {
+  text-decoration: underline;
 }

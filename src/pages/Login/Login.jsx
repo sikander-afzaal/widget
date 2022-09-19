@@ -1,17 +1,14 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-
-import "./Register.css";
-
-const Register = () => {
+import "./Login.css";
+function Login() {
   return (
     <div className="register__wrapper">
       <div className="register">
         <div className="register__top">
           <div className="register__header">
             <div className="register__headerCenter">
-              <span>LoginCreate Account</span>
+              <span>Login</span>
             </div>
           </div>
 
@@ -48,7 +45,7 @@ const Register = () => {
         </div>
 
         <div className="register__main">
-          <span className="register__mainText">Or register with email</span>
+          <span className="register__mainText">Or login with email</span>
 
           <form className="register__form" onSubmit={(e) => e.preventDefault()}>
             <input
@@ -63,24 +60,18 @@ const Register = () => {
               placeholder="Password"
             />
 
-            <input
-              type="password"
-              className="register__input"
-              placeholder="Confirm Password"
-            />
-
             <Link to="/terms-conditions" className="aqua-btn">
-              Create Account
+              Login
             </Link>
           </form>
 
           <span className="register__switchToLogin">
-            Already have an account? <Link to={"/login"}>Login</Link>
+            Don't have an account? <Link to={"/"}>Register</Link>
           </span>
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default Register;
+export default Login;

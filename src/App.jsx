@@ -7,6 +7,7 @@ import MasterPin from "./pages/MasterPin/MasterPin";
 import Home from "./pages/Home/Home";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login/Login";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/master-pin" element={<MasterPin />} />
 
         <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
